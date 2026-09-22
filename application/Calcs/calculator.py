@@ -1,15 +1,15 @@
 """Command-line calculator."""
 
-from ..ops.operations import addition, division, multiplication, subtraction
+from ..ops.operations import Operations
 
 
 def calculator():
     """Run the calculator until the user chooses to quit."""
     operations = {
-        "+": addition,
-        "-": subtraction,
-        "*": multiplication,
-        "/": division,
+        "+": Operations.addition,
+        "-": Operations.subtraction,
+        "*": Operations.multiplication,
+        "/": Operations.division,
     }
 
     print("Calculator: enter q at any prompt to quit.")
